@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>contact us</title>
+</head>
+<body>
+<h3>Contact Form</h3><hr>
+<form method="post">
+    {{ form.hidden_tag() }}
+    {% for form in form %}
+    {{form.label}}
+    {{form}}
+    {% endfor %}
+</form>
+</body>
+</html>
